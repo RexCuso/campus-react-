@@ -1,12 +1,11 @@
 import React from 'react'
-import ComponenteHeader from '../components/ComponenteHeader/ComponenteHeader'
+import ComponenteRegister from '../components/ComponenteRegister/ComponenteRegister'
 import ComponenteFooter from '../components/ComponenteFooter/ComponenteFooter'
 
 function PaginaRegister() {
   return (
     <div>
-      <ComponenteHeader/>
-      
+      <ComponenteRegister/>
       <ComponenteFooter/>
     </div>
   )

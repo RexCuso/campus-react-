@@ -1,9 +1,9 @@
 import React from 'react'
-
+import './ComponenteFooter.css'
 function ComponenteFooter() {
   return (
-    <div>
-      
+    <div id='areaF'>
+      <h1>Footer</h1>
     </div>
   )
 }

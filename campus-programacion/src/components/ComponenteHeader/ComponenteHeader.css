@@ -1,0 +1,7 @@
+#areaH{
+    display: flex;
+    background-image: url(../ComponenteHeader/fondoHeader.png);
+    background-position: cover;
+    color: aliceblue;
+
+}

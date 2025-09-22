@@ -6,7 +6,7 @@ function PaginaMateriaE() {
   return (
     <div>
       <ComponenteHeader/>
-      
+      <h1>Prueba</h1>
       <ComponenteFooter/>
     </div>
   )

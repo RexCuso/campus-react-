@@ -8,7 +8,6 @@ import ComponenteLogin from '../components/ComponenteLogin/ComponenteLogin'
 function PaginaLoging() {
   return (
     <div>
-      <ComponenteHeader/>
       <ComponenteLogin/>
       <ComponenteFooter/>
     </div>
