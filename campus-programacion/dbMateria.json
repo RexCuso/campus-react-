@@ -1,4 +1,51 @@
-{"Materia-html":[],
-"Materia-css":[],
-"Materia-js":[]
+{"Materias":[
+    {
+        "id":"h1",
+        "tex":"Ejemplo de materia a mostras h1"
+    },
+    {
+        "id":"h2",
+        "tex":"Ejemplo de materia a mostras h2"
+    },
+    {
+        "id":"h3",
+        "tex":"Ejemplo de materia a mostras h3"
+    },
+    {
+        "id":"h4",
+        "tex":"Ejemplo de materia a mostras h4"
+    },
+     {
+        "id":"c1",
+        "tex":"Ejemplo de materia a mostras c1"
+    },
+    {
+        "id":"c2",
+        "tex":"Ejemplo de materia a mostras c2"
+    },
+    {
+        "id":"c3",
+        "tex":"Ejemplo de materia a mostras c3"
+    },
+    {
+        "id":"c4",
+        "tex":"Ejemplo de materia a mostras c4"
+    },
+    {
+        "id":"j1",
+        "tex":"Ejemplo de materia a mostras j1"
+    },
+    {
+        "id":"j2",
+        "tex":"Ejemplo de materia a mostras j2"
+    },
+    {
+        "id":"j3",
+        "tex":"Ejemplo de materia a mostras j3"
+    },
+    {
+        "id":"j4",
+        "tex":"Ejemplo de materia a mostras j4"
+    }
+]
 }

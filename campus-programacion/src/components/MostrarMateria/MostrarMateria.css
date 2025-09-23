@@ -1,0 +1,12 @@
+
+
+.Bt{
+    background-image: url(../MostrarMateria/Bt-fondo.png);
+    background: cover;
+    border: transparent;
+}
+.Bt:hover{
+    background-image: url(../MostrarMateria/Bt-hover.png);
+    background: cover;
+    border: transparent;
+}
