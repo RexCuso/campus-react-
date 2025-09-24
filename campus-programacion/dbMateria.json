@@ -1,51 +1,64 @@
 {"Materias":[
     {
         "id":"h1",
-        "tex":"Ejemplo de materia a mostras h1"
+        "titulo":"Ejemplo de materia a mostrar h1",
+        "contenido":"contenido del Ejemplo "
     },
     {
         "id":"h2",
-        "tex":"Ejemplo de materia a mostras h2"
+        "titulo":"Ejemplo de materia a mostrar h2",
+        "contenido":"contenido del Ejemplo "
     },
     {
         "id":"h3",
-        "tex":"Ejemplo de materia a mostras h3"
+        "titulo":"Ejemplo de materia a mostrar h3",
+        "contenido":"contenido del Ejemplo "
     },
     {
         "id":"h4",
-        "tex":"Ejemplo de materia a mostras h4"
+        "titulo":"Ejemplo de materia a mostrar h4",
+        "contenido":"contenido del Ejemplo "
     },
      {
         "id":"c1",
-        "tex":"Ejemplo de materia a mostras c1"
+        "titulo":"Ejemplo de materia a mostrar c1",
+        "contenido":"contenido del Ejemplo "
     },
     {
         "id":"c2",
-        "tex":"Ejemplo de materia a mostras c2"
+        "titulo":"Ejemplo de materia a mostrar c2",
+        "contenido":"contenido del Ejemplo "
     },
     {
         "id":"c3",
-        "tex":"Ejemplo de materia a mostras c3"
+        "titulo":"Ejemplo de materia a mostrar c3",
+        "contenido":"contenido del Ejemplo "
     },
     {
         "id":"c4",
-        "tex":"Ejemplo de materia a mostras c4"
+        "titulo":"Ejemplo de materia a mostrar c4",
+        "contenido":"contenido del Ejemplo "
     },
     {
         "id":"j1",
-        "tex":"Ejemplo de materia a mostras j1"
+        "titulo":"Ejemplo de materia a mostrar j1",
+        "contenido":"contenido del Ejemplo "
     },
     {
         "id":"j2",
-        "tex":"Ejemplo de materia a mostras j2"
+        "titulo":"Ejemplo de materia a mostrar j2",
+        "contenido":"contenido del Ejemplo "
     },
     {
         "id":"j3",
-        "tex":"Ejemplo de materia a mostras j3"
+        "titulo":"Ejemplo de materia a mostrar j3",
+        "contenido":"contenido del Ejemplo "
     },
     {
         "id":"j4",
-        "tex":"Ejemplo de materia a mostras j4"
+        "titulo":"Ejemplo de materia a mostrar j4",
+        "contenido":"contenido del Ejemplo "
+
     }
 ]
 }

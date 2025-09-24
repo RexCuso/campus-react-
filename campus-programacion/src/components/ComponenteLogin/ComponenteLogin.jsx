@@ -12,6 +12,8 @@ function ComponenteLogin() {
    const VerificarUser = async () => {
     try {
       const usuarios = await ServiciosUsuarios.getUsuarios()
+      console.log(usuarios);
+      
       const usuarioEncontrado = usuarios.find(
         user => user.nombre === nombre && user.contraseña === contraseña
       )
