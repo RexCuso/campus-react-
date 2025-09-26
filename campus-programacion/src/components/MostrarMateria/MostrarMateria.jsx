@@ -8,11 +8,13 @@ function MostrarMateria() {
   const [materias, setMaterias] = useState([]);
   const [materiaElegida, setMateriaElegida] = useState([]);
   
+  /* El useEffect para darle a "datos" el valor traido del json */
   useEffect(() => {
     const obtenerMaterias = async () => {
     try {
       const datos = await ServiciosMateria.getMaterias();
       setMaterias(datos);
+      /* en caso de error este mesaje saltara en la consola */
     }catch (error) {
       console.error('No se puedo octener la materia ', error);
     }
@@ -20,7 +22,8 @@ function MostrarMateria() {
 
     obtenerMaterias();
   },[]);
-
+/* con esta constante/funcion se filtran las materias del json segun el id de los botones,
+tambien se podran el valor de la materia filtrada en "MateriaElegida" para imprimirlo  */
 const TraerM = (Event) => {
   const idBoton = Event.target.id;
   const materiasFiltradas = materias.find(materias => materias.id === idBoton);
@@ -29,7 +32,8 @@ const TraerM = (Event) => {
 
   return (
     <div>
-      <aside>
+      {/* la side bar con los botones  */}
+      <aside id='MenuTareas'>
         <ul>
           <li><button className='Bt' id='TM1' onClick={TraerM}>Pasos de estrutura</button></li>
           <li><button className='Bt' id='TM2' onClick={TraerM}>Iniciar un html y conecion</button></li>
@@ -38,8 +42,8 @@ const TraerM = (Event) => {
           <li><button className='Bt' id='TM5' onClick={TraerM}>Funciones variadas js</button></li>
           <li><button className='Bt' id='TM6' onClick={TraerM}>Ejemplos de css</button></li>
         </ul>
-      </aside>
-
+      </aside >
+      {/* El area donde se imprimira la materia filtrada */}
       <div className='areaMateria'>
         {materiaElegida ? (
           <div>

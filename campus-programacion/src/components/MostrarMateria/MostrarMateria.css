@@ -1,5 +1,8 @@
 
-
+#MenuTareas{
+    display: grid;
+    left: 0%;
+}
 .Bt{
     background-image: url(../MostrarMateria/Bt-fondo.png);
     background: cover;

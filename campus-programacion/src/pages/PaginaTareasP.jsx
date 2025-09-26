@@ -6,7 +6,7 @@ function PaginaTareasP() {
   return (
     <div>
       <ComponenteHeader/>
-      
+      <h1>No se que poner aqui en estos momentos </h1>
       <ComponenteFooter/>
     </div>
   )

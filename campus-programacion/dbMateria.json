@@ -60,5 +60,32 @@
         "contenido":"contenido del Ejemplo "
 
     }
+],
+"Tareas":[
+    {
+        "id":"T1",
+        "titulo":"Ejemplo de tarea a mostrar T1",
+        "contenido":"contenido del Ejemplo "
+
+    },
+    {
+        "id":"T2",
+        "titulo":"Ejemplo de tarea a mostrar T2",
+        "contenido":"contenido del Ejemplo "
+    },
+    {
+        "id":"T3",
+        "titulo":"Ejemplo de tarea a mostrar T3",
+        "contenido":"contenido del Ejemplo "
+    },
+    {
+        "id":"T4",
+        "titulo":"Ejemplo de tarea a mostrar T4",
+        "contenido":"contenido del Ejemplo "
+    }
+],
+"Respuestas":[
+    
 ]
+
 }

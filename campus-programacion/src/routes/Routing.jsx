@@ -11,8 +11,8 @@ export default function Routing() {
         <Routes>
           <Route path='/' element={<PaginaLoging/>}/>
           <Route path='/Registro' element={<PaginaRegister/>}/>
-          <Route path='/MaterialE' element={<PaginaMateriaE/>}/>
-          <Route path='/MaterialP' element={<PaginaMateriaP/>}/>
+          <Route path='/MateriaE' element={<PaginaMateriaE/>}/>
+          <Route path='/MateriaP' element={<PaginaMateriaP/>}/>
         </Routes>
       </Router>
     </div>

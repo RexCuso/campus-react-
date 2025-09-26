@@ -26,11 +26,11 @@ function ComponenteLogin() {
       if (usuarioEncontrado.tipo === "E") {
         localStorage.setItem("usuario", JSON.stringify(usuarioEncontrado))
         console.log("Tus credenciales son correctas")
-        navigate("/PaginaMateriaE")
+        navigate("/MateriaE")
       } else if (usuarioEncontrado.tipo === "P") {
         localStorage.setItem("usuario", JSON.stringify(usuarioEncontrado))
         console.log("Tus credenciales son correctas")
-        navigate("/PaginaMateriaP")
+        navigate("/MateriaP")
       } else {
         console.log("Tipo de usuario no reconocido")
       }
