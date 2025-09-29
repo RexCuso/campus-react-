@@ -40,7 +40,15 @@
       "contraseña": "quePeresa",
       "telefono": "86819901",
       "tipo": "E"
+    },
+    {
+      "id": "7",
+      "nombre": "AdrianCarton",
+      "contraseña": "Frankly, I enjoyed the war",
+      "telefono": "83194104",
+      "tipo": "E"
     }
 ]
 
 }
+

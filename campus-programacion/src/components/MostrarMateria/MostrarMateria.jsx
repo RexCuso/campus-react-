@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import './MostrarMateria.css'
 import ServiciosUsuarios from '../../servers/ServiciosUsuarios'
 import ServiciosMateria from '../../servers/ServiciosMateria'
 
@@ -6,7 +7,7 @@ import ServiciosMateria from '../../servers/ServiciosMateria'
 function MostrarMateria() {
   /* Constantes para traer la informacion del json materias */
   const [materias, setMaterias] = useState([]);
-  const [materiaElegida, setMateriaElegida] = useState([]);
+  const [materiaElegida, setMateriaElegida] = useState(null);
   
   /* El useEffect para darle a "datos" el valor traido del json */
   useEffect(() => {
@@ -26,8 +27,8 @@ function MostrarMateria() {
 tambien se podran el valor de la materia filtrada en "MateriaElegida" para imprimirlo  */
 const TraerM = (Event) => {
   const idBoton = Event.target.id;
-  const materiasFiltradas = materias.find(materias => materias.id === idBoton);
-  setMateriaElegida(materiasFiltradas)
+  const materiaFiltrada = materias.find(materia => materia.id === idBoton);
+  setMateriaElegida(materiaFiltrada)
 };
 
   return (
@@ -35,16 +36,16 @@ const TraerM = (Event) => {
       {/* la side bar con los botones  */}
       <aside id='MenuTareas'>
         <ul>
-          <li><button className='Bt' id='TM1' onClick={TraerM}>Pasos de estrutura</button></li>
-          <li><button className='Bt' id='TM2' onClick={TraerM}>Iniciar un html y conecion</button></li>
-          <li><button className='Bt' id='TM3' onClick={TraerM}>Etiquetas importantes</button></li>
-          <li><button className='Bt' id='TM4' onClick={TraerM}>Las constantes de js</button></li>
-          <li><button className='Bt' id='TM5' onClick={TraerM}>Funciones variadas js</button></li>
-          <li><button className='Bt' id='TM6' onClick={TraerM}>Ejemplos de css</button></li>
+          <li><button className='Bt' id='M1' onClick={TraerM}>Pasos de estrutura</button></li>
+          <li><button className='Bt' id='M2' onClick={TraerM}>Iniciar un html y conecion</button></li>
+          <li><button className='Bt' id='M3' onClick={TraerM}>Etiquetas importantes</button></li>
+          <li><button className='Bt' id='M4' onClick={TraerM}>Las constantes de js</button></li>
+          <li><button className='Bt' id='M5' onClick={TraerM}>Funciones variadas js</button></li>
+          <li><button className='Bt' id='M6' onClick={TraerM}>Ejemplos de css</button></li>
         </ul>
       </aside >
-      {/* El area donde se imprimira la materia filtrada */}
-      <div className='areaMateria'>
+      {/* El area donde se imprimira la materia filtrada, ArMa = area materia  */}
+      <div className='ArMa'>
         {materiaElegida ? (
           <div>
             <h2>{materiaElegida.titulo}</h2>

@@ -3,6 +3,10 @@ import ComponenteHeader from '../components/ComponenteHeader/ComponenteHeader'
 import ComponenteFooter from '../components/ComponenteFooter/ComponenteFooter'
 import MostrarMateria from '../components/MostrarMateria/MostrarMateria'
 
+
+
+
+
 function PaginaMateriaE() {
   return (
     <div>

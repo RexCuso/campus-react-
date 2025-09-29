@@ -3,5 +3,9 @@
     background-image: url(../ComponenteHeader/fondoHeader.png);
     background-position: cover;
     color: aliceblue;
+}
+#logo{
+    background: transparent;
+    
 
 }

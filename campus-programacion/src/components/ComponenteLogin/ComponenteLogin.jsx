@@ -25,7 +25,7 @@ function ComponenteLogin() {
 
       if (usuarioEncontrado.tipo === "E") {
         localStorage.setItem("usuario", JSON.stringify(usuarioEncontrado))
-        console.log("Tus credenciales son correctas")
+        console.log("Tus credenciales son correctas",usuarioEncontrado)
         navigate("/MateriaE")
       } else if (usuarioEncontrado.tipo === "P") {
         localStorage.setItem("usuario", JSON.stringify(usuarioEncontrado))
@@ -41,10 +41,12 @@ function ComponenteLogin() {
   return (
     <div className='cuerpo'>
       <h1>Loging De Acceso</h1>
-        <label htmlFor="inNombre">Nombre</label><br />
-        <input  type="text" id='inNombre' value={nombre} onChange={(e) => SetNombre(e.target.value)}/><br />
-        <label htmlFor="inContraseña">Contraseña</label><br />
-        <input type="password" id='inContraseña' value={contraseña} onChange={(e) => setContraseña(e.target.value)}/><br />
+        {/* InNom = ingresar nombre*/}
+        <label htmlFor="InNom">Nombre</label><br />
+        <input  type="text" id='InNom' value={nombre} onChange={(e) => SetNombre(e.target.value)}/><br />
+        {/* InCon = ingresar contraseña */}
+        <label htmlFor="InCon">Contraseña</label><br />
+        <input type="password" id='InCon' value={contraseña} onChange={(e) => setContraseña(e.target.value)}/><br />
         <button onClick={VerificarUser}>Entrar</button>
     </div>
   )

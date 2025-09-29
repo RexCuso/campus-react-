@@ -1,71 +1,40 @@
 {"Materias":[
     {
-        "id":"h1",
-        "titulo":"Ejemplo de materia a mostrar h1",
+        "id":"M1",
+        "titulo":"Ejemplo de materia a mostrar M1",
         "contenido":"contenido del Ejemplo "
     },
     {
-        "id":"h2",
-        "titulo":"Ejemplo de materia a mostrar h2",
+        "id":"M2",
+        "titulo":"Ejemplo de materia a mostrar M2",
         "contenido":"contenido del Ejemplo "
     },
     {
-        "id":"h3",
-        "titulo":"Ejemplo de materia a mostrar h3",
+        "id":"M3",
+        "titulo":"Ejemplo de materia a mostrar M3",
         "contenido":"contenido del Ejemplo "
     },
     {
-        "id":"h4",
-        "titulo":"Ejemplo de materia a mostrar h4",
+        "id":"M4",
+        "titulo":"Ejemplo de materia a mostrar M4",
         "contenido":"contenido del Ejemplo "
     },
      {
-        "id":"c1",
-        "titulo":"Ejemplo de materia a mostrar c1",
+        "id":"M5",
+        "titulo":"Ejemplo de materia a mostrar M5",
         "contenido":"contenido del Ejemplo "
     },
     {
-        "id":"c2",
-        "titulo":"Ejemplo de materia a mostrar c2",
+        "id":"M6",
+        "titulo":"Ejemplo de materia a mostrar M6",
         "contenido":"contenido del Ejemplo "
-    },
-    {
-        "id":"c3",
-        "titulo":"Ejemplo de materia a mostrar c3",
-        "contenido":"contenido del Ejemplo "
-    },
-    {
-        "id":"c4",
-        "titulo":"Ejemplo de materia a mostrar c4",
-        "contenido":"contenido del Ejemplo "
-    },
-    {
-        "id":"j1",
-        "titulo":"Ejemplo de materia a mostrar j1",
-        "contenido":"contenido del Ejemplo "
-    },
-    {
-        "id":"j2",
-        "titulo":"Ejemplo de materia a mostrar j2",
-        "contenido":"contenido del Ejemplo "
-    },
-    {
-        "id":"j3",
-        "titulo":"Ejemplo de materia a mostrar j3",
-        "contenido":"contenido del Ejemplo "
-    },
-    {
-        "id":"j4",
-        "titulo":"Ejemplo de materia a mostrar j4",
-        "contenido":"contenido del Ejemplo "
-
     }
 ],
 "Tareas":[
     {
         "id":"T1",
-        "titulo":"Ejemplo de tarea a mostrar T1",
-        "contenido":"contenido del Ejemplo "
+        "titulo":"Cual es el animal mas grande",
+        "contenido":"Pregunta de Biologia "
 
     },
     {
@@ -86,6 +55,6 @@
 ],
 "Respuestas":[
     
+    
 ]
-
 }
