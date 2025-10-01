@@ -2,7 +2,7 @@ async function getUsuarios() {
     
     try {
         
-        const response = await fetch("http://localhost:3002/Usuarios",{
+        const response = await fetch("http://localhost:3001/Usuarios",{
         method:'GET',
         headers : {
             'Content-Type': 'application/json'
@@ -25,7 +25,7 @@ async function postUsuarios (consulta) {
     
     try {
         
-        const response =await fetch("http://localhost:3002/Usuarios",{
+        const response =await fetch("http://localhost:3001/Usuarios",{
         method:'POST',
         headers : {
             'Content-Type': 'application/json' },
@@ -47,7 +47,7 @@ async function deleteUsuarios (id) {
     
     try {
         
-        const response =await fetch("http://localhost:3002/Usuarios/"+ id,{
+        const response =await fetch("http://localhost:3001/Usuarios/"+ id,{
         method:'DELETE',
         headers : {
             'Content-Type': 'application/json'
@@ -68,7 +68,7 @@ async function putUsuarios (id, consulta) {
     
     try {
         
-        const response =await fetch("http://localhost:3002/Usuarios/"+ id,{
+        const response =await fetch("http://localhost:3001/Usuarios/"+ id,{
         method:'PUT',
         headers : {
             'Content-Type': 'application/json'

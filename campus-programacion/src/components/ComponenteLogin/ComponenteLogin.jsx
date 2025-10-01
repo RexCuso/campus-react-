@@ -12,6 +12,7 @@ function ComponenteLogin() {
    const VerificarUser = async () => {
     try {
       const usuarios = await ServiciosUsuarios.getUsuarios()
+      localStorage.setItem("idUsuario", usuarioEncontrado.id);
       console.log(usuarios);
       
       const usuarioEncontrado = usuarios.find(
