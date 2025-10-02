@@ -1,0 +1,100 @@
+
+.gestionar-tareas {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.gestionar-tareas h2,
+.gestionar-tareas h3 {
+  text-align: center;
+}
+
+.gestionar-tareas input,
+.gestionar-tareas textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.gestionar-tareas button {
+  margin-right: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.gestionar-tareas ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.gestionar-tareas li {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-textarea {
+  width: 100%;
+  height: 100px; /* o el alto que prefieras */
+  padding: 8px;
+  font-size: 14px;
+  resize: vertical; /* permite al usuario ajustar altura si quiere */
+  box-sizing: border-box;
+}
+
+.tarea-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  transition: box-shadow 0.2s;
+}
+
+.tarea-item:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado: Título y contenido */
+.tarea-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+/* Título en negrita y más grande */
+.tarea-titulo {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+/* Contenido en color más suave */
+.tarea-contenido {
+  color: #555;
+  font-size: 14px;
+}
+
+/* Botones de acción */
+.tarea-acciones button {
+  margin-right: 10px;
+  padding: 6px 12px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tarea-acciones button:last-child {
+  background-color: #d32f2f;
+}
+
+.tarea-acciones button:hover {
+  opacity: 0.9;
+}

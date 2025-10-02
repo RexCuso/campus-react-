@@ -17,6 +17,11 @@ function ComponenteRegister() {
     /* borrar los mensajes de error y exito anteriores */
     setError("")    
     setExito("")
+    /* para que no puedan registrarse con campos en blanco (minimo que los inventen) */
+    if (!nombre || !correo || !telefono || !contraseña) {
+     setError("No has llenado todos los campos")
+     return
+    }
     /* asegurarse que las contraseñas tengan mas de 8 carateres(Porque sera el minimo siempre es 8?) */
     if (contraseña.length < 8) {
       setError("La contraseña debe tener un minimo de 8 caracteres (porque no usas el nombre de una cancion).")
@@ -30,19 +35,20 @@ function ComponenteRegister() {
       const nombreExiste = Usuarios.some(usuario => 
         usuario.nombre.toLowerCase() === nombre.toLowerCase()
       )
-
+      /* aqui valido llamo el error en caso de que el nombre se repitiera  */
       if (nombreExiste) {
         setError("El nombre de usuario ya existe en el sitema, por favor piense en otro.")
         return
       }
-      /* esta constante es para crear nuevos usuarios */
+      /* esta constante es para crear nuevos usuarios (tambien les asigna el tipo: "E") */
       const nuevoUsuario = {
         nombre,
         contraseña,
         correo,
-        telefono
+        telefono,
+        tipo: "E"
       }
-      /* aqui guardamos nuevos usuarios en el...o informamos que hubo un error  */
+      /* aqui guardamos nuevos usuarios en el json...o informamos que hubo un error  */
       await ServiciosUsuarios.postUsuarios(nuevoUsuario)
 
       setExito("Registro exitoso, serar devolvido al loging en un momento")
@@ -57,7 +63,7 @@ function ComponenteRegister() {
     }
   }
   return (
-    <div>
+    <div className="AreaRegister">
       <h1>Registro Para Usuarios</h1>
         <label htmlFor="inNombre">Nombre</label><br />
         <input  type="text" id='inNombre' value={nombre} onChange={(e) => SetNombre(e.target.value)}/><br />

@@ -1,0 +1,112 @@
+/* Contenedor del formulario */
+.AreaResponder {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: #f1f8e9; /* Verde muy claro */
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.AreaResponder h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2e7d32; /* Verde oscuro */
+}
+
+.AreaResponder label {
+  display: block;
+  margin-bottom: 6px;
+  color: #1b5e20;
+  font-weight: bold;
+}
+
+.AreaResponder textarea {
+  width: 100%;
+  min-height: 120px; /* equivalente a ~4 rows */
+  padding: 12px;
+  border: 1px solid #a5d6a7;
+  border-radius: 6px;
+  resize: vertical; /* el usuario puede estirarlo si quiere */
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.AreaResponder select,
+.AreaResponder textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #a5d6a7;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.AreaResponder select:focus,
+.AreaResponder textarea:focus {
+  border-color: #2e7d32;
+  outline: none;
+  box-shadow: 0 0 4px rgba(46, 125, 50, 0.5);
+}
+
+/* Botón */
+.AreaResponder button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.AreaResponder button:hover {
+  background-color: #1b5e20;
+}
+
+.AreaResponder button:active {
+  transform: scale(0.98);
+}
+
+/* ---- Mensajes estilo modal ---- */
+.AlertBox {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 300px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  animation: fadeIn 0.3s ease;
+}
+
+.AlertBox.success {
+  background-color: #2e7d32; /* Verde */
+}
+
+.AlertBox.error {
+  background-color: #c62828; /* Rojo */
+}
+
+.AlertBox button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-weight: bold;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translate(-50%, -10px); }
+  to { opacity: 1; transform: translate(-50%, 0); }
+}

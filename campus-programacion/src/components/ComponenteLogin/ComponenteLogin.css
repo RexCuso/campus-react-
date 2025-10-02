@@ -1,4 +1,60 @@
-.cuerpo{
-background-image: url(../ComponenteLogin/fondo-azul-trasparente.png);
-background-position: cover;
+.AreaLogin {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 25px;
+  background-color: #e8f5e9; /* Verde claro */
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.AreaLogin h1 {
+  text-align: center;
+  color: #2e7d32; /* Verde oscuro */
+  margin-bottom: 20px;
+}
+
+.AreaLogin label {
+  display: block;
+  margin-bottom: 5px;
+  color: #1b5e20;
+  font-weight: bold;
+}
+
+.AreaLogin input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #a5d6a7;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.AreaLogin button {
+  width: 100%;
+  padding: 10px;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.AreaLogin button:hover {
+  background-color: #1b5e20;
+}
+
+.AreaLogin p {
+  text-align: center;
+  font-size: 14px;
+}
+
+.AreaLogin p.error {
+  color: red;
+}
+
+.AreaLogin p.success {
+  color: green;
 }

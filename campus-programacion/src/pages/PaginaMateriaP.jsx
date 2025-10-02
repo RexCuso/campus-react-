@@ -2,14 +2,14 @@ import React from 'react'
 import ComponenteHeader from '../components/ComponenteHeader/ComponenteHeader'
 import ComponenteFooter from '../components/ComponenteFooter/ComponenteFooter'
 import MostrarMateria from '../components/MostrarMateria/MostrarMateria'
-import RegistrarTareas from '../components/Registra-ResponderTareas/RegistrarTareas'
+import GestionarTareas from '../components/Registra-ResponderTareas/GestionarTareas'
 
 function PaginaMateriaP() {
   return (
     <div>
       <ComponenteHeader/>
       <MostrarMateria/>
-      <RegistrarTareas/>
+      <GestionarTareas/>
       <ComponenteFooter/>
     </div>
   )

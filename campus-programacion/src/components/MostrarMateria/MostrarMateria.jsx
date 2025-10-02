@@ -32,9 +32,9 @@ const TraerM = (Event) => {
 };
 
   return (
-    <div>
+    <div className="MostrarMateria">
       {/* la side bar con los botones  */}
-      <aside id='MenuTareas'>
+      <aside id='MenuMaterias'>
         <ul>
           <li><button className='Bt' id='M1' onClick={TraerM}>Pasos de estrutura</button></li>
           <li><button className='Bt' id='M2' onClick={TraerM}>Iniciar un html y conecion</button></li>

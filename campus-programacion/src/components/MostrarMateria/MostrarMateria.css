@@ -1,27 +1,81 @@
 
-#MenuTareas{
-    display: grid;
-    left: 0%;
-}
-.Bt{
-    background-image: url(../MostrarMateria/Bt-fondo.png);
-    width: 30% ;
-    height: 30% ;
-    background-size: 100% ;
-    background-position: center;
-    border: transparent;
-    font-size: x-large;
-}
-.Bt:hover{
-    background-image: url(../MostrarMateria/Bt-hover.png);
-    background-image: cover;
-    border: transparent;
+/* Contenedor principal */
+.MostrarMateria {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  flex-wrap: wrap; /* Para que en pantallas pequeñas se acomode en columnas */
 }
 
-.ArMa{
-    display: grid;
-    background-color: blue;
-    width: 50%;
-    height: 45%;
-    border-radius: 15%;
+/* Sidebar con botones */
+#MenuMaterias {
+  flex: 0 0 220px; /* Ancho fijo del sidebar */
+  background-color: #e8f5e9; /* Verde muy claro */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#MenuMaterias ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#MenuMaterias li {
+  margin-bottom: 12px;
+}
+
+/* Botones principales */
+#MenuMaterias .Bt {
+  width: 100%;
+  padding: 12px;
+  background-color: #2e7d32; /* Verde fuerte */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+#MenuMaterias .Bt:hover {
+  background-color: #1b5e20; /* Verde más oscuro */
+}
+
+#MenuMaterias .Bt:active {
+  transform: scale(0.97);
+}
+
+/* Área de contenido */
+.ArMa {
+  flex: 1; /* Ocupa el espacio restante */
+  min-width: 280px;
+  padding: 20px;
+  background-color: #f9fbe7; /* Fondo muy claro */
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.ArMa h2 {
+  color: #2e7d32;
+  margin-bottom: 15px;
+}
+
+.ArMa p {
+  line-height: 1.6;
+  color: #333;
+  font-size: 15px;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .MostrarMateria {
+    flex-direction: column;
+  }
+
+  #MenuMaterias {
+    flex: 1;
+  }
 }

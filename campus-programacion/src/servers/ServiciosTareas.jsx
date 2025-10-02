@@ -2,7 +2,7 @@ async function getTareas() {
     
     try {
         
-        const response = await fetch("http://localhost:3001/tareas",{
+        const response = await fetch("http://localhost:3001/Tareas",{
         method:'GET',
         headers : {
             'Content-Type': 'application/json'
@@ -25,7 +25,7 @@ async function postTareas (consulta) {
     
     try {
         
-        const response =await fetch("http://localhost:3001/tareas",{
+        const response =await fetch("http://localhost:3001/Tareas",{
         method:'POST',
         headers : {
             'Content-Type': 'application/json' },
@@ -47,7 +47,7 @@ async function deleteTareas (id) {
     
     try {
         
-        const response =await fetch("http://localhost:3001/tareas/"+ id,{
+        const response =await fetch("http://localhost:3001/Tareas/"+ id,{
         method:'DELETE',
         headers : {
             'Content-Type': 'application/json'
@@ -68,7 +68,7 @@ async function putTareas (id, consulta) {
     
     try {
         
-        const response =await fetch("http://localhost:3001/tareas/"+ id,{
+        const response =await fetch("http://localhost:3001/Tareas/"+ id,{
         method:'PUT',
         headers : {
             'Content-Type': 'application/json'

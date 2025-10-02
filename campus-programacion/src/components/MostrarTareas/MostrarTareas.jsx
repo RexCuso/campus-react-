@@ -21,7 +21,7 @@ function MostrarTareas() {
 
   return (
     /* y aqui se deveria renderisar todas las tareas disponibles en json....o decirte que no hay tareas */
-    <div>
+    <div className="AreaTareas">
       <h2>Lista de Tareas</h2>
         <ul>
             {InfoTareas.length === 0 ? (

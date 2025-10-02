@@ -2,14 +2,14 @@ import React from 'react'
 import ComponenteHeader from '../components/ComponenteHeader/ComponenteHeader'
 import ComponenteFooter from '../components/ComponenteFooter/ComponenteFooter'
 import MostrarTareas from '../components/MostrarTareas/MostrarTareas'
-import RegistrarTareas from '../components/Registra-ResponderTareas/RegistrarTareas'
+import GestionarTareas from '../components/Registra-ResponderTareas/GestionarTareas'
 
 function PaginaTareasP() {
   return (
     <div>
       <ComponenteHeader/>
       <MostrarTareas/>
-      <RegistrarTareas/>
+      <GestionarTareas/>
       <ComponenteFooter/>
     </div>
   )

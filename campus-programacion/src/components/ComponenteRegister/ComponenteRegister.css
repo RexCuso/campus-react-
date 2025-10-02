@@ -1,0 +1,74 @@
+.AreaRegister {
+  max-width: 450px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f1f8e9; /* Verde muy claro */
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  font-family: Arial, sans-serif;
+}
+
+.AreaRegister h1 {
+  text-align: center;
+  color: #2e7d32; /* Verde oscuro */
+  margin-bottom: 25px;
+}
+
+.AreaRegister label {
+  display: block;
+  margin-bottom: 6px;
+  color: #1b5e20;
+  font-weight: bold;
+}
+
+.AreaRegister input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 18px;
+  border: 1px solid #a5d6a7;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.AreaRegister input:focus {
+  border-color: #2e7d32;
+  outline: none;
+  box-shadow: 0 0 4px rgba(46, 125, 50, 0.5);
+}
+
+.AreaRegister button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.AreaRegister button:hover {
+  background-color: #1b5e20;
+}
+
+.AreaRegister button:active {
+  transform: scale(0.98);
+}
+
+.AreaRegister p {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+.AreaRegister p.error {
+  color: red;
+  font-weight: bold;
+}
+
+.AreaRegister p.success {
+  color: green;
+  font-weight: bold;
+}

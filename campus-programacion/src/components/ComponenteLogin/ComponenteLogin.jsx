@@ -12,12 +12,14 @@ function ComponenteLogin() {
    const VerificarUser = async () => {
     try {
       const usuarios = await ServiciosUsuarios.getUsuarios()
-      localStorage.setItem("idUsuario", usuarioEncontrado.id);
+      
       console.log(usuarios);
       
       const usuarioEncontrado = usuarios.find(
         user => user.nombre === nombre && user.contraseña === contraseña
       )
+
+      
 
       if (!usuarioEncontrado) {
         console.log("Tus credenciales no son correctas ")
@@ -40,7 +42,7 @@ function ComponenteLogin() {
     }
   }
   return (
-    <div className='cuerpo'>
+    <div className="AreaLogin">
       <h1>Loging De Acceso</h1>
         {/* InNom = ingresar nombre*/}
         <label htmlFor="InNom">Nombre</label><br />
